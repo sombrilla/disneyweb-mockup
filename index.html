@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <title>Disney Channel</title>
+  <meta name="description" content="Disney Channel">
+  <meta name="author" content="Juan Beldi">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap-hover-dropdown.min.js"></script>
+</head>
+<body>
+
+	<nav class="nav navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+					<span class="glyphicon glyphicon-th"></span>
+				</button>
+				
+				<a id="logo" href="index.html" class="navbar-brand"><h1>Disney</h1></a>
+			</div>
+		  
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Inicio</a></li>
+					<li><a href="programacion.html">Programacion</a></li>
+					<li>
+						<a id="dPeliculas" data-target="dPeliculas"  href="peliculas.html" data-hover="dropdown" role="button"  aria-haspopup="true" aria-expanded="false" >Peliculas <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="dPeliculas">
+							<li><a href="peliculas.html#increibles">Increibles 2</a></li>
+							<li><a href="peliculas.html#antman">Ant-Man</a></li>
+							<li><a href="peliculas.html#hansolo">Han Solo</a></li>
+							<li><a href="peliculas.html#ironman">Iron-Man</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 buscar pull-right">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Buscar...">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="jumbotron dc">
+		<div class="container">
+			<h2>Nueva temporada de Soy Luna!</h2>
+			<p>Todos los Lunes un episodio nuevo</p>
+			<p><a class="btn btn-primary btn-lg" href="programacion.html" role="button">Ver más</a></p>
+		</div>
+	</div>
+ 
+    <div class="container mt-20">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="row">
+					<div class="col-xs-6 col-md-3 no-padding">
+						<div class="images-thumbnails">
+							<a href="programacion.html" class="btn btn-block ver-thumb">
+								<img src="images/dc/once.jpg" alt="Soy Luna" class="img-thumbnail center-block">
+								<div>
+									<h3>O11CE</h3>
+									<p><span class="glyphicon glyphicon-eye-open"></span>Ver</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3 no-padding">
+						<div class="images-thumbnails">
+							<a href="programacion.html" class="btn btn-block ver-thumb">
+								<img src="images/dc/pato.jpg" alt="Soy Luna" class="img-thumbnail center-block">
+								<div>
+									<h3>PATOAVENTURAS</h3>
+									<p><span class="glyphicon glyphicon-eye-open"></span>Ver</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3 no-padding">
+						<div class="images-thumbnails">
+							<a href="programacion.html" class="btn btn-block ver-thumb">
+								<img src="images/dc/play.jpg" alt="Soy Luna" class="img-thumbnail center-block">
+								<div>
+									<h3>Play</h3>
+									<p><span class="glyphicon glyphicon-eye-open"></span>Ver</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3 no-padding">
+						<div class="images-thumbnails">
+							<a href="programacion.html" class="btn btn-block ver-thumb">
+								<img src="images/dc/bh.jpg" alt="Soy Luna" class="img-thumbnail center-block">
+								<div>
+									<h3>Grandes Heroes</h3>
+									<p><span class="glyphicon glyphicon-eye-open"></span>Ver</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<h3> Peliculas </h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="jumbotron peliculas">
+		<div class="container">
+			<h2>YA EN CINES</h2>
+			<p>La secuela de tus heroes favoritos ya esta disponible!</p>
+			<p><a class="btn btn-danger btn-lg" href="peliculas.html#increibles" role="button">Ver más</a></p>
+		</div>
+	</div>
+	
+	<div class="container mt-20">
+		<div class="row">
+			<div class="col-xs-6 col-md-4 no-padding">
+				<div class="images-thumbnails">
+					<a href="peliculas.html#hansolo" class="btn btn-block ver-thumb">
+						<img src="images/peliculas/hansolo.jpg" alt="Han Solo" class="img-thumbnail center-block">
+						<div>
+							<h3>Han Solo</h3>
+							<p><span class="glyphicon glyphicon-eye-open"></span>Ver</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-4 no-padding">
+				<div class="images-thumbnails">
+					<a href="peliculas.html#antman" class="btn btn-block ver-thumb">
+						<img src="images/peliculas/antman.jpg" alt="Ant-Man" class="img-thumbnail center-block">
+						<div>
+							<h3>Ant-Man</h3>
+							<p><span class="glyphicon glyphicon-eye-open"></span>Ver</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-4 no-padding">
+				<div class="images-thumbnails">
+					<a href="peliculas.html#ironman" class="btn btn-block ver-thumb">
+						<img src="images/peliculas/ironman.jpg" alt="IRCONMAN" class="img-thumbnail center-block">
+						<div>
+							<h3>IRONMAN</h3>
+							<p><span class="glyphicon glyphicon-eye-open"></span>Ver</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">Disney ©</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

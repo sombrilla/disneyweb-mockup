@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <title>Disney Channel</title>
+  <meta name="description" content="Disney Channel">
+  <meta name="author" content="Juan Beldi">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-magnify.css">
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+	
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap-magnify.min.js"></script>
+  <script src="js/bootstrap-hover-dropdown.min.js"></script>
+</head>
+<body>
+
+	<nav class="nav navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+					<span class="glyphicon glyphicon-th"></span>
+				</button>
+				
+				<a id="logo" href="index.html" class="navbar-brand"><h1>Disney</h1></a>
+			</div>
+		  
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="programacion.html">Programacion</a></li>
+					<li class="active">
+						<a id="dPeliculas" data-target="dPeliculas"  href="peliculas.html" data-hover="dropdown" role="button"  aria-haspopup="true" aria-expanded="false" >Peliculas <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="dPeliculas">
+							<li><a href="peliculas.html#increibles">Increibles 2</a></li>
+							<li><a href="peliculas.html#antman">Ant-Man</a></li>
+							<li><a href="peliculas.html#hansolo">Han Solo</a></li>
+							<li><a href="peliculas.html#ironman">Iron-Man</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="col-xs-12 col-sm-3 buscar pull-right">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Buscar...">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div id="carousel" class="carousel slide" data-ride="carousel">
+		
+
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<div class="imagenC">
+					<img src="images/peliculas/banner/increibles.jpg" alt="Los Increibles 2" class="img-responsive center-block">
+				</div>
+				<div class="carousel-caption">
+					<h2>Los Increibles 2</h2>
+					<p>Ya en cines!</p>
+				</div>
+			</div>
+			
+			<div class="item">
+				<div class="imagenC">
+					<img src="images/peliculas/banner/hansolo.jpg" alt="Han Solo" class="img-responsive center-block">
+				</div>
+				<div class="carousel-caption">
+					<h2>Han Solo: Una historia de Star Wars</h2>
+					<p>Ya en cines!</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="imagenC">
+					<img src="images/peliculas/banner/antman.jpg" alt="Han Solo" class="img-responsive center-block">
+				</div>
+				<div class="carousel-caption">
+					<h2>Ant-Man</h2>
+					<p>Disponible en DVD y Blu-Ray!</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="imagenC">
+					<img src="images/peliculas/banner/ironman.jpg" alt="Han Solo" class="img-responsive center-block">
+				</div>
+				<div class="carousel-caption">
+					<h2>Iron-Man</h2>
+					<p>Disponible en DVD y Blu-Ray!</p>
+				</div>
+			</div>
+		</div>
+
+		<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Anterior</span>
+		</a>
+		<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Proximo</span>
+		</a>
+		
+		<ol class="carousel-indicators">
+			<li data-target="#carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel" data-slide-to="1"></li>
+			<li data-target="#carousel" data-slide-to="2"></li>
+			<li data-target="#carousel" data-slide-to="3"></li>
+		</ol>
+	</div>
+
+    <div class="container mt-20">
+		<div class="row">
+			<ul class="nav nav-pills nav-justified">
+				<li role="presentation"><a href="#increibles">Los Increibles 2</a></li>
+				<li role="presentation"><a href="#antman">Ant-Man</a></li>
+				<li role="presentation"><a href="#hansolo">Han Solo</a></li>
+				<li role="presentation"><a href="#ironman">Iron Man</a></li>
+			</ul>
+		</div>
+		<div class="row row-peliculas">
+			<div class="col-xs-10 col-xs-push-2">
+				<h4 id="increibles">
+					Los increibles 2
+				</h4>
+				<p class="">
+					Tres meses después de la derrota de Síndrome y saliendo de una competencia en la que Dash participó, la familia Parr se ve obligada a asumir sus identidades como supers de nuevo con la repentina aparición de un supervillano conocido como "el subterráneo". Mientras Bob y Helen con ayuda de Frozono intentan detener al villano y dejan a sus hijos Dash y Violeta cuidando a su hermano menor Jack Jack; la batalla es presenciada por un hombre llamado Winston Deavor que le pide a uno de sus empleados que los siga de cerca. Conforme la pelea continua la identidad de Violeta queda expuesta ante el chico que le gusta Tony Rynider, mientras que el subterráneo se las arregla para escapar dejando su excavadora gigante en dirección al ayuntamiento de la ciudad. A pesar de que la familia consigue detener la excavadora, son arrestados debido a que según la ley los súper siguen siendo ilegales. Frozono por su parte es contactado por el empleado de Deavor que le ofrece una oferta de continuar operando como súper.
+				</p>
+			</div>
+			<div class="col-xs-2 col-xs-pull-10">
+				<img data-toggle="magnify" src="images/peliculas/cover/increibles.jpg" class="img-thumbnail"/>
+			</div>
+		</div>
+		
+		<div class="row row-peliculas">	
+			<div class="col-xs-10">
+				<h4 id="antman">
+					Ant-Man
+				</h4>
+				<p class="">
+					El ladrón Scott Lang debe ayudar a su mentor, el Dr. Henry Hank Pym, a salvaguardar el misterio de la tecnología de Ant-Man –que permite a su usuario disminuir el tamaño, pero aumentar en fuerza– de varias amenazas.
+				</p>
+			</div>
+			<div class="col-xs-2">
+				<img data-toggle="magnify" src="images/peliculas/cover/antman.jpg" class="img-thumbnail"/>
+			</div>
+		</div>
+
+		<div class="row row-peliculas">	
+			<div class="col-xs-10 col-xs-push-2">
+				<h4 id="hansolo">
+					Han Solo: Una Historia de Star Wars
+				</h4>
+				<p class="">
+					Han Solo: Una Historia de Star Wars es una nueva aventura del sinvergüenza y contrabandista más conocido de la galaxia, a bordo del Halcón Milenario y en un viaje a una galaxia muy lejana. A través de una serie de aventuras en un submundo criminal oscuro y peligroso, Han Solo se hace amigo de su futuro copiloto Chewbacca y conoce al conocido jugador Lando Calrissian, en un viaje que marcará el camino de uno de los héroes más improbables de la saga de Star Wars. La película se sitúa muchos años antes que Han conociera a Luke Skywalker y a Obi Wan Kenobi en Una nueva esperanza y mucho antes de los acontecimientos ocurridos en Rogue One.
+				</p>
+			</div>
+			<div class="col-xs-2 col-xs-pull-10">
+				<img data-toggle="magnify" src="images/peliculas/cover/hansolo.jpg" class="img-thumbnail"/>
+			</div>
+		</div>
+		
+		
+		<div class="row row-peliculas">	
+			<div class="col-xs-10">
+				<h4 id="ironman">
+					Iron-Man
+				</h4>
+
+				<p class="">
+					La película comienza con Anthony "Tony" Stark empresario multimillonario y presidente de Stark Industries visitando a soldados de guardia en el Medio Oriente. Él bromea con algunos miembros de un convoy que parecen estar divirtiéndose genuinamente por su personalidad. De repente, el convoy es atacado por un grupo de terroristas. Los soldados luchan para defenderse, pero mueren rápidamente uno por uno. Stark trata de pedir ayuda pero una bomba (irónicamente con el logotipo de su empresa, "Stark Industries") explota demasiado cerca de él, perforando su chaleco blindado e hiriéndolo de gravedad en su pecho. Minutos más tarde Tony es capturado y grabado por un grupo de terroristas.
+				</p>
+			</div>
+			<div class="col-xs-2">
+				<img data-toggle="magnify" src="images/peliculas/cover/ironman.jpg" class="img-thumbnail"/>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">Disney ©</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

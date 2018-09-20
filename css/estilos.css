@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body{
+    background: rgb(25,25,25);
+    background: #F8F8F8;
+	color:rgb(75,75,75);
+    position: relative;
+	margin-top: 50px;
+	font-family: 'Montserrat';
+}
+
+h1{
+	text-align:center;
+	font-size:50px;
+	color:rgb(244, 66, 66);
+	display:none;
+}
+
+hr{
+	margin:0;
+}
+
+nav{
+	box-shadow:0 0 5px rgba(0,0,0,.1);
+	
+}
+
+.navbar-toggle{
+	float:left;
+	margin:5px;
+	margin-left:10px;
+	margin-bottom:0;
+}
+
+.buscar {
+	padding-top:10px;
+	padding-bottom:6px;
+}
+
+#logo{
+	background-image:url(../images/logo.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	width:100px;
+	padding:5px;
+	margin-right:10px;
+	padding-top:2px;
+}
+#carousel .item{
+	height:40vw;
+	overflow:hidden;
+	text-shadow:0 0 2px rgba(0,0,0,.4);
+}
+#carousel .item img{
+	width:auto;
+	height:40vw;
+}
+
+.carousel-caption h2{
+	font-size: 50px;
+	background:rgba(175,175,175,.2);
+	width:100%;
+	border-radius:5px;
+	padding:10px;
+}
+
+.carousel-caption p{
+	font-size: 20px;
+}
+
+.jumbotron{
+	background-position:center;
+	background-size: 100% auto ;
+	background-repeat:no-repeat;
+	position:relative;
+	text-align:center;
+	
+}
+
+.jumbotron .container{
+	color:rgba(75,75,75);
+	color:white;
+	position:absolute;
+	vertical-align:bottom;
+	bottom:0px;
+	width:100%;
+	text-shadow:0 0 2px rgba(0,0,0,.4);
+}
+
+.jumbotron .container h2{
+	font-size: 50px;
+	background:rgba(175,175,175,.2);
+	width:100%;
+	border-radius:5px;
+	padding:10px;
+}
+
+
+
+.dc{
+	background-image:url('../images/dc/luna.jpg');
+	background-position:center;
+	height:40vw;
+}
+
+.peliculas{
+	background-image:url('../images/peliculas/increibles.jpg');
+	height:40vw;
+}
+
+@media only screen and (max-width: 800px) {
+	#carousel .item{
+		height:70vw;
+	}
+	#carousel .item img{
+		width:auto;
+		height:70vw;
+	}
+	.jumbotron{
+		background-size: auto 100%  ;
+	}
+    .dc, .peliculas{
+        height: 70vw;
+    }
+	.dc{
+		background-image:url('../images/dc/lunaSmall.jpg');
+	}
+
+	.peliculas{
+		background-image:url('../images/peliculas/increiblesSmall.jpg');
+	}
+}
+
+.row-peliculas{
+	border:1px solid rgb(220,220,220);
+	color:rgb(25,25,25);
+	padding:10px;
+	margin:15px;
+	border-radius:5px;
+}
+
+.row-peliculas:hover{
+	background:rgb(235,235,235);
+}
+
+.nav-pills{
+	padding:15px;
+	border-collapse:separate;border-spacing:5px;
+}
+
+.nav-pills li{
+	margin:5px;
+}
+
+.nav-pills a{
+	color:white;
+	background:rgb(75,75,75)!important;
+}
+
+.nav-pills a:hover{
+	color:rgb(180,180,180);
+}
+
+
+.imagenC{
+	position:relative;
+}
+
+.imagenC img{
+	position: absolute;
+    margin: auto;
+    display: block;
+    bottom: 0px;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+	max-width:none;
+}
+
+.form-control{
+	display:inline-block;
+}
+
+.ver-thumb{
+	color:rgb(155,155,155);
+	font-weight:bold;
+	padding:0;
+	border:none;
+	background: rgb(50,50,50);
+	font-size:25px;
+	position:relative;
+	overflow:hidden;
+	border-radius:0;
+	box-sizing:border-box;
+}
+
+.ver-thumb:hover, .ver-thumb:hover div{
+	background: rgba(100,100,100,.5);
+	color:white;
+}
+
+
+.ver-thumb div{
+	margin:0;
+	position:absolute;
+	background: rgba(50,50,50,.5);
+	width:100%;
+	z-index:3;
+	bottom:0;
+	transition:all .2s ease;
+}
+
+.ver-thumb div h3{
+	margin:10px;
+	color:white;
+}
+
+.ver-thumb p{
+	font-size:15px;
+}
+
+.ver-thumb p span{
+	font-size:15px;
+	margin-right:5px;
+}
+
+.mt-20{
+    
+}
+
+
+
+.images-thumbnails{
+    padding: 0px;
+	margin:0px;
+    border-radius: 0px;
+    background: rgb(50,50,50);
+	transition:background .2s ease;
+}
+.img-thumbnail{
+	border:none;
+	padding:0;
+	border-radius: 0px;
+}
+
+.images-thumbnails:hover{
+	background: rgb(75,75,75);
+}
+
+.images-thumbnails p{
+    /*color: white;*/
+}
+
+.row-list{
+	margin-left:0;margin-right:0;
+	
+}
+
+.row-list>div{
+	box-shadow:0 0 5px rgba(0,0,0,.01);
+	padding:15px;
+}
+
+.row-list>div table{
+	margin-bottom:0;
+	
+}
+
+.no-padding{
+	padding-left:0;
+	padding-right:0;
+	padding:15px;
+}
+
+footer,.footer{
+    color: black;
+    padding: 10px;
+    background: #F8F8F8;
+    text-align: center;
+}

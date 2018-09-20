@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <title>Disney Channel</title>
+  <meta name="description" content="Disney Channel">
+  <meta name="author" content="Juan Beldi">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-magnify.css">
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+	
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap-magnify.min.js"></script>
+  <script src="js/bootstrap-hover-dropdown.min.js"></script>
+</head>
+<body>
+
+	<nav class="nav navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+					<span class="glyphicon glyphicon-th"></span>
+				</button>
+				
+				<a id="logo" href="index.html" class="navbar-brand"><h1>Disney</h1></a>
+			</div>
+		  
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li ><a href="index.html">Inicio</a></li>
+					<li class="active"><a href="#">Programacion</a></li>
+					<li>
+						<a id="dPeliculas" data-target="dPeliculas"  href="peliculas.html" data-hover="dropdown" role="button"  aria-haspopup="true" aria-expanded="false" >Peliculas <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="dPeliculas">
+							<li><a href="peliculas.html#increibles">Increibles 2</a></li>
+							<li><a href="peliculas.html#antman">Ant-Man</a></li>
+							<li><a href="peliculas.html#hansolo">Han Solo</a></li>
+							<li><a href="peliculas.html#ironman">Iron-Man</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="col-xs-12 col-sm-3 buscar pull-right">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Buscar...">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+    <div class="row row-list">
+		<div class="col-xs-12" style="margin-top:15px;">
+			<table class="table table-striped table-bordered table-hover table-responsive">
+				<tr>
+					<th>Programa</th>
+					<th>Lunes</th>
+					<th>Martes</th>
+					<th>Miercoles</th>
+					<th>Jueves</th>
+					<th>Viernes</th>
+					<th>Sabado</th>
+					<th>Domingo</th>
+				</tr>
+				<tr>
+					<td><a type="button" data-toggle="modal" data-target=".modalLuna">Soy Luna</a></td>
+					<td class="success">18:30</td>
+					<td class="danger">-</td>
+					<td class="success">18:30</td>
+					<td class="danger">-</td>
+					<td class="danger">-</td>
+					<td class="success">18:30</td>
+					<td class="danger">-</td>
+				</tr>
+				<tr>
+					<td><a type="button" data-toggle="modal" data-target=".modalOnce">O11CE</a></td>
+					<td class="success">17:30</td>
+					<td class="success">17:30</td>
+					<td class="success">17:30</td>
+					<td class="success">17:30</td>
+					<td class="success">17:30</td>
+					<td class="danger">-</td>
+					<td class="danger">-</td>
+				</tr>
+				<tr>
+					<td><a type="button" data-toggle="modal" data-target=".modalAA">Art Attack</a></td>
+					<td class="success">12:30</td>
+					<td class="success">12:30</td>
+					<td class="success">12:30</td>
+					<td class="success">12:30</td>
+					<td class="success">12:30</td>
+					<td class="success">12:30</td>
+					<td class="success">12:30</td>
+				</tr>
+				<tr>
+					<td><a type="button" data-toggle="modal" data-target=".modalClase">Cambio de clase</a></td>
+					<td class="success">19:30</td>
+					<td class="danger">-</td>
+					<td class="success">19:30</td>
+					<td class="danger">-</td>
+					<td class="success">19:30</td>
+					<td class="danger">-</td>
+					<td class="danger">-</td>
+				</tr>
+				<tr>
+					<td><a type="button" data-toggle="modal" data-target=".modalPato">Patoaventuras</a></td>
+					<td class="success">7:00</td>
+					<td class="success">7:00</td>
+					<td class="success">7:00</td>
+					<td class="success">7:00</td>
+					<td class="success">7:00</td>
+					<td class="success">10:00</td>
+					<td class="success">10:00</td>
+				</tr>
+				<tr>
+					<td><a type="button" data-toggle="modal" data-target=".modalMickey">Mickey Mouse</a></td>
+					<td class="success">8:00</td>
+					<td class="success">8:00</td>
+					<td class="success">8:00</td>
+					<td class="success">8:00</td>
+					<td class="success">8:00</td>
+					<td class="danger">-</td>
+					<td class="danger">-</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="modal fade modalLuna" tabindex="-1" role="dialog" aria-labelledby="modalLuna">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Soy Luna</h4>
+				</div>
+				<div class="modal-body">
+					<p>La trama trata de Luna Valente (Karol Sevilla), una niña que tiene que dejar su vida anterior al mudarse a una nueva ciudad. La pequeña se refugia en sus patines y la música para adaptarse a las nuevas circunstancias que tiene que vivir.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modalAA" tabindex="-1" role="dialog" aria-labelledby="modalAA">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">ArtAttack</h4>
+				</div>
+				<div class="modal-body">
+					<p>Art Attack es un programa de televisión infantil sobre manualidades.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modalOnce" tabindex="-1" role="dialog" aria-labelledby="modalOnce">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">O11CE</h4>
+				</div>
+				<div class="modal-body">
+					<p>Once es la historia de Gabo (Mariano González), un joven futbolista de un pequeño pueblo de Argentina, llamado Álamo Seco. Él es Huérfano desde muy pequeño, y ayuda a su abuela, Amelia (Beatriz Dellacasa), en la panadería del pueblo. Cuando no ayuda a su abuela, él, junto con su mejor amigo Felipe (Julián Cerati), juegan al fútbol en el pueblo. Su juego es tan bueno que llega a los oídos de Francisco Velázquez (Nicolás Pauls), el director técnico de Los Halcones Dorados, un reconocido equipo de fútbol de Buenos Aires.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modalClase" tabindex="-1" role="dialog" aria-labelledby="modalClase">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Cambio de clase</h4>
+				</div>
+				<div class="modal-body">
+					<p>La serie se centra en las aventuras de los alumnos del Instituto Cervantes, que se reúnen ante la ventana del pasillo durante los recreos y los cambios de clase, donde se suceden todo tipo de situaciones cómicas. Y que relatan cosas cotidianas.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modalPato" tabindex="-1" role="dialog" aria-labelledby="modalPato">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Patoaventuras</h4>
+				</div>
+				<div class="modal-body">
+					<p>La serie cuenta con las aventuras de Scrooge McDuck y sus sobrinos nietos, Huey, Dewey y Louie. Los sobrinos estaban viviendo con su tío Donald, hasta que los dejó al cuidado de Scrooge cuando él mismo unió a la Marina de los Estados Unidos.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade modalMickey" tabindex="-1" role="dialog" aria-labelledby="modalMickey">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Mickey Mouse</h4>
+				</div>
+				<div class="modal-body">
+					<p>Mickey Mouse es una serie de televisión de comedia animada que cuenta con clásicos personajes: Mickey Mouse, Minnie Mouse, Donald Duck, Daisy Duck, Goofy y Pluto en entornos contemporáneos como París, Venecia, Tokio y Nueva York.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">Disney ©</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
